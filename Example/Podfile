@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YHInfiniteScrollView_Example' do
+  pod 'YHInfiniteScrollView', :path => '../'
+
+  target 'YHInfiniteScrollView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
