@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet weak var mainContainer: UIView!
     
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

@@ -15,6 +15,11 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		ACCD53771F8CB42900696310 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD53761F8CB42900696310 /* Helper.swift */; };
+		ACCD53791F8CB5E500696310 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD53781F8CB5E500696310 /* FirstViewController.swift */; };
+		ACCD537B1F8CB5EE00696310 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD537A1F8CB5EE00696310 /* SecondViewController.swift */; };
+		ACCD537D1F8CB5F800696310 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD537C1F8CB5F800696310 /* ThirdViewController.swift */; };
+		ACCD537F1F8CB60300696310 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD537E1F8CB60300696310 /* FourthViewController.swift */; };
+		ACCD53811F8CB60B00696310 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD53801F8CB60B00696310 /* FifthViewController.swift */; };
 		F99FA06B1B30D728D80D96E7 /* Pods_YHInfiniteScrollView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0225843D0208941991DEC91E /* Pods_YHInfiniteScrollView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +53,11 @@
 		642DDD011E0D352E4C371941 /* Pods-YHInfiniteScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHInfiniteScrollView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHInfiniteScrollView_Example/Pods-YHInfiniteScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		898AD1537854CA4D8C44D0B7 /* Pods-YHInfiniteScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHInfiniteScrollView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHInfiniteScrollView_Example/Pods-YHInfiniteScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ACCD53761F8CB42900696310 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		ACCD53781F8CB5E500696310 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		ACCD537A1F8CB5EE00696310 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		ACCD537C1F8CB5F800696310 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		ACCD537E1F8CB60300696310 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		ACCD53801F8CB60B00696310 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		FAC6E79220052DDE75267ADE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +116,11 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				ACCD53781F8CB5E500696310 /* FirstViewController.swift */,
+				ACCD537A1F8CB5EE00696310 /* SecondViewController.swift */,
+				ACCD537C1F8CB5F800696310 /* ThirdViewController.swift */,
+				ACCD537E1F8CB60300696310 /* FourthViewController.swift */,
+				ACCD53801F8CB60B00696310 /* FifthViewController.swift */,
 				ACCD53761F8CB42900696310 /* Helper.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -376,6 +391,11 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				ACCD53771F8CB42900696310 /* Helper.swift in Sources */,
+				ACCD537F1F8CB60300696310 /* FourthViewController.swift in Sources */,
+				ACCD53811F8CB60B00696310 /* FifthViewController.swift in Sources */,
+				ACCD537B1F8CB5EE00696310 /* SecondViewController.swift in Sources */,
+				ACCD537D1F8CB5F800696310 /* ThirdViewController.swift in Sources */,
+				ACCD53791F8CB5E500696310 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
