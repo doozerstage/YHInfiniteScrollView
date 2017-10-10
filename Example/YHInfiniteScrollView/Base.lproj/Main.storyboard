@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rd-GO-G0d" userLabel="Main Container">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
                         </subviews>
@@ -51,11 +51,11 @@
                         <viewControllerLayoutGuide type="bottom" id="LSm-6P-ThQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SbB-ij-fP4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsB-Lu-EFv" userLabel="Number">
-                                <rect key="frame" x="173.66666666666666" y="284.33333333333331" width="67" height="167.33333333333337"/>
+                                <rect key="frame" x="154" y="322.33333333333331" width="67" height="167.33333333333337"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="140"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,11 +81,11 @@
                         <viewControllerLayoutGuide type="bottom" id="1Z1-Dd-Oxc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2y5-OR-tbF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEi-6W-HX3" userLabel="Number">
-                                <rect key="frame" x="165" y="284.33333333333331" width="84.666666666666657" height="167.33333333333337"/>
+                                <rect key="frame" x="145.33333333333337" y="322.33333333333331" width="84.666666666666657" height="167.33333333333337"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="140"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,11 +111,11 @@
                         <viewControllerLayoutGuide type="bottom" id="dol-ic-VIc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dpz-em-Fcu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1n-2a-F2H" userLabel="Number">
-                                <rect key="frame" x="163" y="284.33333333333331" width="88.333333333333343" height="167.33333333333337"/>
+                                <rect key="frame" x="143.33333333333334" y="322.33333333333331" width="88.333333333333314" height="167.33333333333337"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="140"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -141,11 +141,11 @@
                         <viewControllerLayoutGuide type="bottom" id="48d-Ky-4hs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4K2-Xw-FmQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz0-0X-msu" userLabel="Number">
-                                <rect key="frame" x="162" y="284.33333333333331" width="90.666666666666657" height="167.33333333333337"/>
+                                <rect key="frame" x="142.33333333333337" y="322.33333333333331" width="90.666666666666657" height="167.33333333333337"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="140"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -171,11 +171,11 @@
                         <viewControllerLayoutGuide type="bottom" id="O5C-hQ-Gbc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rRO-sL-exi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-fA-nJV" userLabel="Number">
-                                <rect key="frame" x="163.33333333333337" y="284.33333333333331" width="87.666666666666657" height="167.33333333333337"/>
+                                <rect key="frame" x="143.66666666666666" y="322.33333333333331" width="87.666666666666686" height="167.33333333333337"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="140"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
