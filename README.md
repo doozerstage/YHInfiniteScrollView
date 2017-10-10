@@ -22,7 +22,7 @@ pod 'YHInfiniteScrollView'
 
 ## Author
 
-yonghwinam, yonghwinam@smtown.com
+Yonghwi (yonghwi.nam@gmail.com)
 
 ## License
 
