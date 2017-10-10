@@ -32,7 +32,7 @@ fileprivate let DEFAULT_CONTENTVIEW_TAG                     = 8000
 // Rotation Queue 크기
 fileprivate let ROTATION_QUEUE_COUNT                         = 3
 
-class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
+open class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
     
     // Main ScrollView
     fileprivate var mainScrollView: UIScrollView!
@@ -47,19 +47,19 @@ class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
     
     // MARK: View Life Cycle
     // @param contentObjects : Infinite ScrollView에 보여질 Contents (UIView or UIViewController)
-    init(frame: CGRect, contentObjects: [Any]) {
+    public init(frame: CGRect, contentObjects: [Any]) {
         super.init(frame: frame)
         
         self.contentQueue = self.contentQueueWithViewTag(contentObjects)
         self.rotationQueue = firstQueue(self.contentQueue)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         print("aDecoder")
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         super.draw(rect)
         
         // Root View 설정
@@ -75,12 +75,12 @@ class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
     }
     
     // MARK: - UIScrollViewDelegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // Delegate 호출
         self.performDelegateForScrollViewDidScroll(scrollView)
     }
     
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         // 좌/우 마지막 스크롤일때 스크롤이 시작되기전 Rotation Queue 변경
         self.changeRotationQueue(scrollView)
         
@@ -88,7 +88,7 @@ class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
         self.performDelegateForScrollViewWillBeginDraging(scrollView)
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         // Delegate 호출
         self.performDelegateForScrollViewDidEndDecelerating(scrollView)
     }
