@@ -40,6 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1690" y="-14"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="iTe-lO-iKe">
@@ -90,7 +91,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078431369999995" green="0.76862745099999996" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="qEi-6W-HX3" firstAttribute="centerX" secondItem="2y5-OR-tbF" secondAttribute="centerX" id="dEr-lQ-oft"/>
                             <constraint firstItem="qEi-6W-HX3" firstAttribute="centerY" secondItem="2y5-OR-tbF" secondAttribute="centerY" id="eXW-Xl-Hl6"/>
@@ -120,7 +121,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078431369999995" green="0.76862745099999996" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="G1n-2a-F2H" firstAttribute="centerY" secondItem="dpz-em-Fcu" secondAttribute="centerY" id="XfZ-w6-jmt"/>
                             <constraint firstItem="G1n-2a-F2H" firstAttribute="centerX" secondItem="dpz-em-Fcu" secondAttribute="centerX" id="bpB-PH-uNg"/>
@@ -150,7 +151,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078431369999995" green="0.76862745099999996" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="rz0-0X-msu" firstAttribute="centerX" secondItem="4K2-Xw-FmQ" secondAttribute="centerX" id="vUo-Wx-2fO"/>
                             <constraint firstItem="rz0-0X-msu" firstAttribute="centerY" secondItem="4K2-Xw-FmQ" secondAttribute="centerY" id="wba-Kd-753"/>
@@ -180,7 +181,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078431369999995" green="0.76862745099999996" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="cjF-fA-nJV" firstAttribute="centerX" secondItem="rRO-sL-exi" secondAttribute="centerX" id="2lI-av-oH3"/>
                             <constraint firstItem="cjF-fA-nJV" firstAttribute="centerY" secondItem="rRO-sL-exi" secondAttribute="centerY" id="SUq-qV-l7t"/>

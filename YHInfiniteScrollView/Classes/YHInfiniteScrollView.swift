@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // MARK: - YHInfiniteScrollViewDelegate
-@objc protocol YHInfiniteScrollViewDelegate: class {
+@objc public protocol YHInfiniteScrollViewDelegate: class {
     
     @objc optional func didScroll(atContentOffsetX: CGFloat)
     
@@ -43,7 +43,7 @@ open class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
     // 순환 처리를 위한 Rotation Queue (ex. 0,1,2 -> 2,0,1 -> 1,2,0... )
     fileprivate var rotationQueue: [UIView]!
     
-    var delegate: YHInfiniteScrollViewDelegate?
+    public var delegate: YHInfiniteScrollViewDelegate?
     
     // MARK: View Life Cycle
     // @param contentObjects : Infinite ScrollView에 보여질 Contents (UIView or UIViewController)
@@ -353,7 +353,7 @@ open class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
     fileprivate func performDelegateForScrollViewDidScroll(_ scrollView: UIScrollView) {
         let convertedOffsetX = self.convertedContentOffsetXForDidScroll(scrollView)
         
-        self.delegate?.didScroll!(atContentOffsetX: convertedOffsetX)
+        self.delegate?.didScroll?(atContentOffsetX: convertedOffsetX)
     }
     
     // Scroll 시작전 호출 되는 Delegate 호출
