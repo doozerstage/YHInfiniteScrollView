@@ -1,0 +1,16 @@
+PODS:
+  - YHInfiniteScrollView (0.1.0)
+
+DEPENDENCIES:
+  - YHInfiniteScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  YHInfiniteScrollView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  YHInfiniteScrollView: 6ea2960425824a9a96fd1f398ab258a077cc9f9a
+
+PODFILE CHECKSUM: 940a7fbb228c3008fd8538f960d179fc1fb2c36f
+
+COCOAPODS: 1.3.1

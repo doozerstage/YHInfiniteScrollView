@@ -1,0 +1,22 @@
+{
+  "name": "YHInfiniteScrollView",
+  "version": "0.1.0",
+  "summary": "A short description of YHInfiniteScrollView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yonghwinam/YHInfiniteScrollView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yonghwinam": "yonghwinam@smtown.com"
+  },
+  "source": {
+    "git": "https://github.com/yonghwinam/YHInfiniteScrollView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YHInfiniteScrollView/Classes/**/*"
+}

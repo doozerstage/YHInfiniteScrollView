@@ -1,0 +1,6 @@
+framework module YHInfiniteScrollView {
+  umbrella header "YHInfiniteScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}
