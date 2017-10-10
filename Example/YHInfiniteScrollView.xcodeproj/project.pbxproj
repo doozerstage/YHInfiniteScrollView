@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		ACCD53771F8CB42900696310 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD53761F8CB42900696310 /* Helper.swift */; };
 		F99FA06B1B30D728D80D96E7 /* Pods_YHInfiniteScrollView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0225843D0208941991DEC91E /* Pods_YHInfiniteScrollView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +33,7 @@
 		093E8A30C4A31A3F9959DA54 /* Pods-YHInfiniteScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHInfiniteScrollView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHInfiniteScrollView_Tests/Pods-YHInfiniteScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		13BAD38420119A8098094DF0 /* Pods-YHInfiniteScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHInfiniteScrollView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHInfiniteScrollView_Tests/Pods-YHInfiniteScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		388C26ABE9F47EF8E473AB26 /* Pods_YHInfiniteScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHInfiniteScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BBCBFA36526D85D1E33A77A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3BBCBFA36526D85D1E33A77A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YHInfiniteScrollView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHInfiniteScrollView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +44,11 @@
 		607FACE51AFB9204008FA782 /* YHInfiniteScrollView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHInfiniteScrollView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		60E37B2AD3DF135BC4AE7D55 /* YHInfiniteScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YHInfiniteScrollView.podspec; path = ../YHInfiniteScrollView.podspec; sourceTree = "<group>"; };
+		60E37B2AD3DF135BC4AE7D55 /* YHInfiniteScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YHInfiniteScrollView.podspec; path = ../YHInfiniteScrollView.podspec; sourceTree = "<group>"; };
 		642DDD011E0D352E4C371941 /* Pods-YHInfiniteScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHInfiniteScrollView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHInfiniteScrollView_Example/Pods-YHInfiniteScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		898AD1537854CA4D8C44D0B7 /* Pods-YHInfiniteScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHInfiniteScrollView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHInfiniteScrollView_Example/Pods-YHInfiniteScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FAC6E79220052DDE75267ADE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ACCD53761F8CB42900696310 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		FAC6E79220052DDE75267ADE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				ACCD53761F8CB42900696310 /* Helper.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -372,6 +375,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				ACCD53771F8CB42900696310 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  YHInfiniteScrollView: 6ea2960425824a9a96fd1f398ab258a077cc9f9a
+  YHInfiniteScrollView: c562ca55f0df07f8f491211c9d8ec24f64ed444b
 
 PODFILE CHECKSUM: 940a7fbb228c3008fd8538f960d179fc1fb2c36f
 

@@ -1,22 +1,22 @@
 {
   "name": "YHInfiniteScrollView",
   "version": "0.1.0",
-  "summary": "A short description of YHInfiniteScrollView.",
+  "summary": "Infinite scroll view for Swift",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/yonghwinam/YHInfiniteScrollView",
+  "homepage": "https://github.com/doozerstage/YHInfiniteScrollView.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "yonghwinam": "yonghwinam@smtown.com"
+    "Yonghwi": "yonghwi.nam@gmail.com"
   },
   "source": {
-    "git": "https://github.com/yonghwinam/YHInfiniteScrollView.git",
+    "git": "https://github.com/doozerstage/YHInfiniteScrollView.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "YHInfiniteScrollView/Classes/**/*"
 }
