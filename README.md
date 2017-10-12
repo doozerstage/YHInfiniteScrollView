@@ -8,6 +8,7 @@
 ## Preview
 
 ![](Example/YHInfiniteScrollView/demo.gif)
+![](Example/YHInfiniteScrollView/demo1.gif)
 
 ## Requirements
 
