@@ -104,8 +104,7 @@ self.mainContainer.addSubview(infiniteScrollView)
 Public Method
 
 ```
-//
-func scrollToContentView(toIndex: Int)
+func setContentOffset(atIndex: Int)
 ```
 
 Delegate
