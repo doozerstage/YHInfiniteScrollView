@@ -95,7 +95,7 @@ open class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
     
     // MARK: Public Method
     // 'toIndex'에 해당 하는 ContentView 이동
-    func setContentOffset(atIndex: Int) {
+    public func setContentOffset(atIndex: Int) {
         // ScrollView에 있는 기존 ContentView 삭제
         self.removeAllrotationQueue()
         
