@@ -9,7 +9,10 @@
 
 ![](Example/YHInfiniteScrollView/demo.gif)
 
+## Requirements
 
+* Swift 3 +
+* iOS 9 +
 
 ## Installation
 
