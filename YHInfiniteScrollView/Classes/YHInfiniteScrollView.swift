@@ -55,7 +55,6 @@ open class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        print("aDecoder")
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -484,8 +483,6 @@ open class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
         if convertedOffsetX == (CGFloat.init(currentIndex) * contentWidth + contentWidth) {
             convertedOffsetX = CGFloat.init(currentIndex) * contentWidth
         }
-        
-        //        print("currentIndex : \(currentIndex), originOffsetX : \(originOffsetX), convertedOffsetX : \(convertedOffsetX), movedOffsetX : \(movedOffsetX)")
         
         return convertedOffsetX
     }

@@ -9,6 +9,11 @@
 import UIKit
 import YHInfiniteScrollView
 
+fileprivate let SCREEN_WIDTH: CGFloat               =           UIScreen.main.bounds.width
+fileprivate let SCREEN_HEIHGT: CGFloat              =           UIScreen.main.bounds.height
+fileprivate let STATUSBAR_HEIGHT: CGFloat           =           (SCREEN_HEIHGT == 812.0) ? 44.0 : 20.0
+fileprivate let BOTTOM_GUIDE_HEIGHT: CGFloat        =           (SCREEN_HEIHGT == 812.0) ? 34.0 : 0.0
+
 class ViewController: UIViewController, YHInfiniteScrollViewDelegate {
 
     // MARK: - IBOutlet
@@ -19,18 +24,11 @@ class ViewController: UIViewController, YHInfiniteScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Add YHInfiniteScrollView
-//        self.addInfiniteView()
-        print("top layout guide height : \(self.topLayoutGuide.length)")
+        // Add YHInfiniteScrollView by using layout constraints
+        self.addInfiniteView()
         
-    }
-    
-    override func viewDidLayoutSubviews() {
-        self.addInfiniteViewWithFrame(rect: CGRect(origin: CGPoint(), size: CGSize(width: 300, height: 400)))
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-//        print("top layout guide height : \(self.topLayoutGuide.length)")
+        // Add YHInfiniteScrollView by using frame
+//        self.addInfiniteViewWithFrame(rect: CGRect.init(origin: CGPoint.zero, size: self.sizeOfMainContainer()))
     }
     
     
@@ -76,6 +74,13 @@ class ViewController: UIViewController, YHInfiniteScrollViewDelegate {
         let infiniteScrollView = YHInfiniteScrollView.init(frame: rect, contentObjects: self.contentsViewControllers())
         infiniteScrollView.delegate = self
         self.mainContainer.addSubview(infiniteScrollView)
+    }
+    
+    fileprivate func sizeOfMainContainer() -> CGSize {
+        let width = SCREEN_WIDTH
+        let height = SCREEN_HEIHGT - STATUSBAR_HEIGHT - BOTTOM_GUIDE_HEIGHT
+        
+        return CGSize.init(width: width, height: height)
     }
 
     
