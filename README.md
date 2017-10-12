@@ -101,6 +101,31 @@ self.mainContainer.addSubview(infiniteScrollView)
 
 ```
 
+Public Method
+
+```
+//
+func scrollToContentView(toIndex: Int)
+```
+
+Delegate
+
+```
+func didScroll(atContentOffsetX: CGFloat)
+
+func willScrollToNextView(atIndex: Int)
+func willScrollToNextView(atIndex: Int, contentObject: Any)
+
+func didScrollToNextView(atIndex: Int)
+func didScrollToNextView(atIndex: Int, contentObject: Any)
+
+func willScrollToPreviousView(atIndex: Int)
+func willScrollToPreviousView(atIndex: Int, contentObject: Any)
+
+func didScrollToPreviousView(atIndex: Int)
+func didScrollToPreviousView(atIndex: Int, contentObject: Any)
+```
+
 ## Author
 
 Yonghwi (yonghwi.nam@gmail.com)
