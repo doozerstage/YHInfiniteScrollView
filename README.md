@@ -22,6 +22,8 @@ pod 'YHInfiniteScrollView'
 
 ## Usage
 
+Configure with layout constraints
+
 ```
 import UIKit
 import YHInfiniteScrollView
