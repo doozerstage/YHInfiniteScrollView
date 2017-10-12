@@ -65,6 +65,39 @@ self.mainContainer.addConstraints([alcTop, alcLeading, alcBottom, alcTrailing])
 
 ```
 
+Configure with frame
+
+```
+override func viewDidLoad() {
+super.viewDidLoad()
+
+let firstViewContorller = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController")
+let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController")
+let thirdViewController = self.storyboard?.instantiateViewController(withIdentifier: "ThirdViewController")
+let fourthViewController = self.storyboard?.instantiateViewController(withIdentifier: "FourthViewController")
+let fifthViewController = self.storyboard?.instantiateViewController(withIdentifier: "FifthViewController")
+
+self.addChildViewController(firstViewContorller!)
+self.addChildViewController(secondViewController!)
+self.addChildViewController(thirdViewController!)
+self.addChildViewController(fourthViewController!)
+self.addChildViewController(fifthViewController!)
+
+let contentObjects = [firstViewContorller!, secondViewController!, thirdViewController!, fourthViewController!, fifthViewController!]
+
+// Frame for infinite scroll view
+let infiniteRect = CGRect.init(origin: .zero, size: CGSize.init(width: SCREEN_WIDTH, height: SCREEN_HEIHGT - STATUSBAR_HEIGHT))
+
+// Initialize infinite scroll view with contents
+let infiniteScrollView = YHInfiniteScrollView.init(frame: infiniteRect, contentObjects: contentObjects)
+infiniteScrollView.delegate = self
+
+// Add infinite scroll view to container view (assume that existing container view)
+self.mainContainer.addSubview(infiniteScrollView)
+}
+
+```
+
 ## Author
 
 Yonghwi (yonghwi.nam@gmail.com)
