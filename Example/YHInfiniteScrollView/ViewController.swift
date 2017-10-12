@@ -20,42 +20,18 @@ class ViewController: UIViewController, YHInfiniteScrollViewDelegate {
     // MARK: - IBOutlet
     @IBOutlet weak var mainContainer: UIView!
     
+    // MARK: - Global Instance
+    var infiniteScrollView: YHInfiniteScrollView?
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Add YHInfiniteScrollView by using layout constraints
-//        self.addInfiniteView()
+        self.addInfiniteView()
         
         // Add YHInfiniteScrollView by using frame
 //        self.addInfiniteViewWithFrame(rect: CGRect.init(origin: CGPoint.zero, size: self.sizeOfMainContainer()))
-        
-        let firstViewContorller = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController")
-        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController")
-        let thirdViewController = self.storyboard?.instantiateViewController(withIdentifier: "ThirdViewController")
-        let fourthViewController = self.storyboard?.instantiateViewController(withIdentifier: "FourthViewController")
-        let fifthViewController = self.storyboard?.instantiateViewController(withIdentifier: "FifthViewController")
-        
-        self.addChildViewController(firstViewContorller!)
-        self.addChildViewController(secondViewController!)
-        self.addChildViewController(thirdViewController!)
-        self.addChildViewController(fourthViewController!)
-        self.addChildViewController(fifthViewController!)
-        
-        let infiniteScrollView = YHInfiniteScrollView.init(frame: CGRect.zero,
-                                                           contentObjects: [firstViewContorller!, secondViewController!, thirdViewController!, fourthViewController!, fifthViewController! ])
-        infiniteScrollView.translatesAutoresizingMaskIntoConstraints = false
-        infiniteScrollView.delegate = self
-        
-        self.mainContainer.addSubview(infiniteScrollView)
-        
-        let alcTop = NSLayoutConstraint.init(item: infiniteScrollView, attribute: .top, relatedBy: .equal, toItem: self.mainContainer, attribute: .top, multiplier: 1.0, constant: 0.0)
-        let alcLeading = NSLayoutConstraint.init(item: infiniteScrollView, attribute: .leading, relatedBy: .equal, toItem: self.mainContainer, attribute: .leading, multiplier: 1.0, constant: 0.0)
-        let alcBottom = NSLayoutConstraint.init(item: infiniteScrollView, attribute: .bottom, relatedBy: .equal, toItem: self.mainContainer, attribute: .bottom, multiplier: 1.0, constant: 0.0)
-        let alcTrailing = NSLayoutConstraint.init(item: infiniteScrollView, attribute: .trailing, relatedBy: .equal, toItem: self.mainContainer, attribute: .trailing, multiplier: 1.0, constant: 0.0)
-        
-        self.mainContainer.addConstraints([alcTop, alcLeading, alcBottom, alcTrailing])
     }
     
     
@@ -80,12 +56,25 @@ class ViewController: UIViewController, YHInfiniteScrollViewDelegate {
         print("didScrollToPreviousView(atIndex: \(atIndex), contentObject: \(contentObject)")
     }
     
+    
+    // MARK: - IBAction
+    @IBAction func touchedMenuButton(_ sender: Any) {
+        if let button = sender as? UIButton {
+            let tag  = button.tag
+            let contentIndex = tag - 1000
+            print("content index : \(contentIndex)")
+            self.infiniteScrollView?.setContentOffset(atIndex: tag - 1000)
+        }
+    }
+    
+    
     // MARK: - Private Method
     fileprivate func addInfiniteView() {
         // Initialize YHInfiniteScrollView with layout constraints
         let infiniteScrollView = YHInfiniteScrollView.init(frame: CGRect.zero, contentObjects: self.contentsViewControllers())
         infiniteScrollView.translatesAutoresizingMaskIntoConstraints = false
         infiniteScrollView.delegate = self
+        self.infiniteScrollView = infiniteScrollView
         
         self.mainContainer.addSubview(infiniteScrollView)
         
