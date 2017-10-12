@@ -11,8 +11,9 @@ import YHInfiniteScrollView
 
 fileprivate let SCREEN_WIDTH: CGFloat               =           UIScreen.main.bounds.width
 fileprivate let SCREEN_HEIHGT: CGFloat              =           UIScreen.main.bounds.height
-fileprivate let STATUSBAR_HEIGHT: CGFloat           =           (SCREEN_HEIHGT == 812.0) ? 44.0 : 20.0
-fileprivate let BOTTOM_GUIDE_HEIGHT: CGFloat        =           (SCREEN_HEIHGT == 812.0) ? 34.0 : 0.0
+fileprivate let IPHONEX_HEIGHT: CGFloat             =           812.0
+fileprivate let STATUSBAR_HEIGHT: CGFloat           =           (SCREEN_HEIHGT == IPHONEX_HEIGHT) ? 44.0 : 20.0
+fileprivate let BOTTOM_GUIDE_HEIGHT: CGFloat        =           (SCREEN_HEIHGT == IPHONEX_HEIGHT) ? 34.0 : 0.0
 
 class ViewController: UIViewController, YHInfiniteScrollViewDelegate {
 
@@ -25,10 +26,36 @@ class ViewController: UIViewController, YHInfiniteScrollViewDelegate {
         super.viewDidLoad()
         
         // Add YHInfiniteScrollView by using layout constraints
-        self.addInfiniteView()
+//        self.addInfiniteView()
         
         // Add YHInfiniteScrollView by using frame
 //        self.addInfiniteViewWithFrame(rect: CGRect.init(origin: CGPoint.zero, size: self.sizeOfMainContainer()))
+        
+        let firstViewContorller = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController")
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController")
+        let thirdViewController = self.storyboard?.instantiateViewController(withIdentifier: "ThirdViewController")
+        let fourthViewController = self.storyboard?.instantiateViewController(withIdentifier: "FourthViewController")
+        let fifthViewController = self.storyboard?.instantiateViewController(withIdentifier: "FifthViewController")
+        
+        self.addChildViewController(firstViewContorller!)
+        self.addChildViewController(secondViewController!)
+        self.addChildViewController(thirdViewController!)
+        self.addChildViewController(fourthViewController!)
+        self.addChildViewController(fifthViewController!)
+        
+        let infiniteScrollView = YHInfiniteScrollView.init(frame: CGRect.zero,
+                                                           contentObjects: [firstViewContorller!, secondViewController!, thirdViewController!, fourthViewController!, fifthViewController! ])
+        infiniteScrollView.translatesAutoresizingMaskIntoConstraints = false
+        infiniteScrollView.delegate = self
+        
+        self.mainContainer.addSubview(infiniteScrollView)
+        
+        let alcTop = NSLayoutConstraint.init(item: infiniteScrollView, attribute: .top, relatedBy: .equal, toItem: self.mainContainer, attribute: .top, multiplier: 1.0, constant: 0.0)
+        let alcLeading = NSLayoutConstraint.init(item: infiniteScrollView, attribute: .leading, relatedBy: .equal, toItem: self.mainContainer, attribute: .leading, multiplier: 1.0, constant: 0.0)
+        let alcBottom = NSLayoutConstraint.init(item: infiniteScrollView, attribute: .bottom, relatedBy: .equal, toItem: self.mainContainer, attribute: .bottom, multiplier: 1.0, constant: 0.0)
+        let alcTrailing = NSLayoutConstraint.init(item: infiniteScrollView, attribute: .trailing, relatedBy: .equal, toItem: self.mainContainer, attribute: .trailing, multiplier: 1.0, constant: 0.0)
+        
+        self.mainContainer.addConstraints([alcTop, alcLeading, alcBottom, alcTrailing])
     }
     
     
