@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/YHInfiniteScrollView.svg?style=flat)](http://cocoapods.org/pods/YHInfiniteScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/YHInfiniteScrollView.svg?style=flat)](http://cocoapods.org/pods/YHInfiniteScrollView)
 
-## Example
+## Preview
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+![](Example/YHInfiniteScrollView/demo.gif)
 
 ## Requirements
 
