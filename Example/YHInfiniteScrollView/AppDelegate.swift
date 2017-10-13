@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  YHInfiniteScrollView
 //
-//  Created by yonghwinam on 10/10/2017.
-//  Copyright (c) 2017 yonghwinam. All rights reserved.
+//  Created by Yonghwi Nam on 10/10/2017.
+//  Copyright (c) 2017 DooZerStage. All rights reserved.
 //
 
 import UIKit
