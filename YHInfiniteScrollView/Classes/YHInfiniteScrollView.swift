@@ -190,7 +190,7 @@ open class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
     fileprivate func isRightScrollingInScrollView(_ scrollView: UIScrollView) -> Bool {
         var result: Bool = false
         
-        if scrollView.panGestureRecognizer.translation(in: scrollView.superview).x > 0 {
+        if scrollView.panGestureRecognizer.translation(in: scrollView.superview).x >= 0 {
             result = true
         }
         
