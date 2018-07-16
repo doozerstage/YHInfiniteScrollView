@@ -233,10 +233,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = A87J69XM38;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = A87J69XM38;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -545,6 +547,7 @@
 			baseConfigurationReference = 642DDD011E0D352E4C371941 /* Pods-YHInfiniteScrollView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87J69XM38;
 				INFOPLIST_FILE = YHInfiniteScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -560,6 +563,7 @@
 			baseConfigurationReference = 898AD1537854CA4D8C44D0B7 /* Pods-YHInfiniteScrollView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87J69XM38;
 				INFOPLIST_FILE = YHInfiniteScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -574,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13BAD38420119A8098094DF0 /* Pods-YHInfiniteScrollView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = A87J69XM38;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -595,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 093E8A30C4A31A3F9959DA54 /* Pods-YHInfiniteScrollView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = A87J69XM38;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
