@@ -61,16 +61,19 @@ open class YHInfiniteScrollView: UIView, UIScrollViewDelegate {
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
         
-        // Root View 설정
-        self.clipsToBounds = true
-        self.backgroundColor = UIColor.orange
-        
         // Root View에  Main ScrollView 추가
-        self.mainScrollView = self.configureScrollView(frame: rect)
-        self.addSubview(self.mainScrollView)
-        
-        // Main ScrollView에 Rotation Queue의 ContentView 추가
-        self.setRotationQueueToScrollView()
+        if self.mainScrollView == nil {
+            
+            // Root View 설정
+            self.clipsToBounds = true
+            self.backgroundColor = UIColor.orange
+            
+            self.mainScrollView = self.configureScrollView(frame: rect)
+            self.addSubview(self.mainScrollView)
+            
+            // Main ScrollView에 Rotation Queue의 ContentView 추가
+            self.setRotationQueueToScrollView()
+        }
     }
     
     // MARK: - UIScrollViewDelegate
